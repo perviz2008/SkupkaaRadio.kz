@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>RadioSkupka.kz - Вход</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="form-container">
+    <div class="tab">
+      <button onclick="showTab('login')">Вход</button>
+      <button onclick="showTab('register')">Регистрация</button>
+    </div>
+    <div id="login" class="form-box">
+      <h2>Вход</h2>
+      <input type="email" id="login-email" placeholder="Email" />
+      <input type="password" id="login-password" placeholder="Пароль" />
+      <button onclick="login()">Войти</button>
+      <button class="google">Войти через Google</button>
+      <a href="reset.html">Забыли пароль?</a>
+    </div>
+    <div id="register" class="form-box hidden">
+      <h2>Регистрация</h2>
+      <input type="email" id="reg-email" placeholder="Email" />
+      <input type="password" id="reg-password" placeholder="Пароль" />
+      <button onclick="register()">Зарегистрироваться</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

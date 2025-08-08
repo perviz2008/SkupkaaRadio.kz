@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Меню</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Главное меню</h2>
+    <button>Избранное</button>
+    <button>История</button>
+    <button>Аналитика</button>
+    <button>Профиль</button>
+    <button>Заявки</button>
+    <button>Настройки</button>
+    <button onclick="logout()">Выйти</button>
+  </div>
+  <script>
+    function logout() {
+      alert("Вы вышли");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
